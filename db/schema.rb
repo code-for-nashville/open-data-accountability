@@ -24,9 +24,4 @@ ActiveRecord::Schema.define(version: 20150606182656) do
     t.text     "title"
   end
 
-  create_table "models", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
