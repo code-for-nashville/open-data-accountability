@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date updated:</strong>
+  <%= @dataset.date_updated %>
+</p>
+
+<p>
+  <strong>Expected frequency of update:</strong>
+  <%= @dataset.expected_frequency_of_update %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @dataset.url %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @dataset.date_created %>
+</p>
+
+<%= link_to 'Edit', edit_dataset_path(@dataset) %> |
+<%= link_to 'Back', datasets_path %>

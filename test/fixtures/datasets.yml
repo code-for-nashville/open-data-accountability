@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_updated: 2015-06-06 10:50:28
+  expected_frequency_of_update: 
+  url: 
+  date_created: 2015-06-06 10:50:28
+
+two:
+  date_updated: 2015-06-06 10:50:28
+  expected_frequency_of_update: 
+  url: 
+  date_created: 2015-06-06 10:50:28
