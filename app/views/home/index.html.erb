@@ -1,1 +1,22 @@
-<%= timeline @chart_data %>
+<h1>Total Number of Data Sets: <%= @data_count%> </h1>
+<div class="chart_container">
+  <%= timeline @chart_data %>
+</div>
+
+<h4>Datasets Made in the past month:</h4>
+<ul>
+  <% @created_this_month.each_with_index do |title| %>
+   <li><%= link_to title[0], title[1]%></li>
+  <% end %>
+</ul>
+
+<h4>Datasets Made in the past month:</h4>
+<ul>
+  <% @updated_this_month.each_with_index do |title| %>
+   <li><%= link_to title[0], title[1]%></li>
+  <% end %>
+</ul>
+
+
+
+

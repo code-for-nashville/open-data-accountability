@@ -5,9 +5,13 @@ class HomeController < ApplicationController
       Dataset.where(:identifier=>data['identifier']).first_or_create(
         :date_created=>data['issued'],
         :date_updated=>data['modified'],
+        :category=>data['landingPage'],
         :title=>data['title']
       )
     end
     @chart_data = Dataset.pluck(:title, :date_created, :date_updated)
+    @data_count = Dataset.count
+    @created_this_month = Dataset.where(:date_created => 1.month.ago..Time.now).pluck(:title, :category)
+    @updated_this_month = Dataset.where(:date_updated => 1.month.ago..Time.now).pluck(:title, :category)
   end
 end
