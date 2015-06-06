@@ -1,2 +1,9 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Data Set Count: <%= @data_sets['results'].count %> </h1>
+<table>
+  <% @data_sets['results'].each do |data_set| %>
+    <tr>
+      <td><%= data_set['resource']['description'] %></td>
+      <td><%= data_set['resource']['updatedAt'] %></td>
+    </tr>
+  <% end %>
+</table>
