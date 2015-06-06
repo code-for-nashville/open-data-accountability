@@ -1,8 +1,6 @@
-<h1>Total Number of Data Sets: <%= @data_count%> </h1>
-<div class="chart_container">
-  <%= timeline @chart_data %>
-</div>
-
+<h1><a href="./honolulu">Honolulu</a></h1>
+<h1>Nashville Data Set Count: <%= @nash_count%></h1>
+<%= timeline @nash_chart_data, height: "500px", width: "1000px"%>
 <h4>Datasets Made in the past month:</h4>
 <ul>
   <% @created_this_month.each_with_index do |title| %>
@@ -16,7 +14,4 @@
    <li><%= link_to title[0], title[1]%></li>
   <% end %>
 </ul>
-
-
-
 
