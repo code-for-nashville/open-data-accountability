@@ -16,13 +16,10 @@ ActiveRecord::Schema.define(version: 20150606182656) do
   create_table "datasets", force: :cascade do |t|
     t.datetime "date_updated"
     t.integer  "expected_frequency_of_update"
-    t.string   "url"
     t.datetime "date_created"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-    t.text     "socrata_owner_id"
-    t.text     "socrata_default_page"
-    t.text     "socrata_id"
+    t.text     "identifier"
     t.text     "category"
     t.text     "title"
   end

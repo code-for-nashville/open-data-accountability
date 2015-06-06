@@ -1,14 +1,1 @@
-<h1>Data Set Count: <%= @data_sets['results'].count %> </h1>
-<table>
-  <% @data_sets['results'].each do |data_set| %>
-    <tr>
-      <td><%= data_set['resource']['description'] %></td>
-      <td><%= data_set['resource']['updatedAt'] %></td>
-    </tr>
-  <% end %>
-</table>
-<%= timeline [
-  ["Dataset1", "1789-04-29", "1797-03-03"],
-  ["Dataset2", "1797-03-03", "1801-03-03"],
-  ["Dataset3", "1801-03-03", "1809-03-03"]
-] %>
+<%= timeline @chart_data %>
