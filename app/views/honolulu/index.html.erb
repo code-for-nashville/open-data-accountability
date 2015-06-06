@@ -1,3 +1,16 @@
 <h1><a href="./">Nashville</a>
 <h1>Honolulu Data Set Count: <%= @honolulu_count%></h1>
 <%= timeline @honolulu_chart_data, height: "500px", width: "1000px%"%>
+<h4>Datasets Made in the past month:</h4>
+<ul>
+  <% @created_this_month.each_with_index do |title| %>
+   <li><%= link_to title[0], title[1]%></li>
+  <% end %>
+</ul>
+
+<h4>Datasets Made in the past month:</h4>
+<ul>
+  <% @updated_this_month.each_with_index do |title| %>
+   <li><%= link_to title[0], title[1]%></li>
+  <% end %>
+</ul>
