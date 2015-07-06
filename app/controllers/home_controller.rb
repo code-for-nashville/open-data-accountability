@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     if !params["/"].nil? and params["/"]["dataSet"].present?
-      api_data = HTTParty.get("https://data.#{params['/']['dataSet']}.gov/data.json")
+      api_data = HTTParty.get("https://data.#{params['/']['dataSet']}.gov/data.json", :verify => false)
       api_data['dataset'].each do |data|
         Dataset.where(:identifier=>data['identifier']).first_or_create(
           :date_created=>data['issued'],
