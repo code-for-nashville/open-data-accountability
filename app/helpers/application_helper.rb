@@ -3,7 +3,7 @@ module ApplicationHelper
     [
       ['Austin', 'AustinTexas'],
       ['Baltimore', 'BaltimoreCity'],
-      ['Baton Rouge', 'BrLA']
+      ['Baton Rouge', 'BrLA'],
       ['Burlington', 'BurlingtonVT'],
       ['Honolulu', 'Honolulu'],
       ['Nashville', 'Nashville'],
