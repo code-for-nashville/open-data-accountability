@@ -2,7 +2,7 @@
 <h1>Data Set Count: <%= @count%></h1>
 
 <%= form_for root_path, :method => :get do |f| %>
-  <%= f.select :dataSet, options_for_select(dataSets), :onchange => "this.form.submit();" %>
+  <%= f.select :dataSet, options_for_select(dataSets, @city), :onchange => "this.form.submit();" %>
   <%= f.submit "Get Data", :class => "nav_button" %>
 <% end %>
 
