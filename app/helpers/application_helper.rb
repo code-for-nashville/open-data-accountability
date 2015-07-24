@@ -1,18 +1,18 @@
 module ApplicationHelper
   def dataSets
     [
-      ['Austin', 'AustinTexas'],
-      ['Baltimore', 'BaltimoreCity'],
-      ['Baton Rouge', 'BrLA'],
-      ['Burlington', 'BurlingtonVT'],
-      ['Honolulu', 'Honolulu'],
-      ['Nashville', 'Nashville'],
-      ['New Orleans', 'NoLA'],
-      ['New York', 'NY'],
-      ['Providence', 'ProvidenceRI'],
-      ['Seattle', 'Seattle'],
-      ['Somerville', 'SomervilleMA'],
-      ['South Bend', 'SouthbendIN']
+      ['Austin', 'austintexas'],
+      ['Baltimore', 'baltimorecity'],
+      ['Baton Rouge', 'brla'],
+      ['Burlington', 'burlingtonvt'],
+      ['Honolulu', 'honolulu'],
+      ['Nashville', 'nashville'],
+      ['New Orleans', 'nola'],
+      ['New York', 'ny'],
+      ['Providence', 'providenceri'],
+      ['Seattle', 'seattle'],
+      ['Somerville', 'somervillema'],
+      ['South Bend', 'southbendit']
     ]
   end
 end
