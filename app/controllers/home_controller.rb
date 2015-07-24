@@ -14,8 +14,8 @@ class HomeController < ApplicationController
       @city = params["/"]["dataSet"]
       @chart_data = data.pluck(:title, :date_created, :date_updated)
       @count = data.count
-      @created_this_month = data.where(:date_created => 1.month.ago..Time.now).pluck(:title, :category)
-      @updated_this_month = data.where(:date_updated => 1.month.ago..Time.now).pluck(:title, :category)
+      @created_this_month = data.where(:date_created => 1.month.ago..Time.now).pluck(:title, :category, :date_created)
+      @updated_this_month = data.where(:date_updated => 1.month.ago..Time.now).pluck(:title, :category, :date_updated)
     else
       api_data = HTTParty.get('https://data.nashville.gov/data.json')
       api_data['dataset'].each do |data|

@@ -1,5 +1,10 @@
-<h1><%= @city %></h1>
-<h1>Data Set Count: <%= @count%></h1>
+
+<div class="headline">
+  <img id="codeForNashvilleLogo" class="front-page-logo" src="http://www.codefornashville.org/img/CFNlogo.jpg"></a>
+  <h1><%= @city || "Nashville"%></h1>
+  <h1>Data Set Count: <%= @count%></h1>
+</div>
+
 
 <%= form_for root_path, :method => :get do |f| %>
   <%= f.select :dataSet, options_for_select(dataSets, @city), :onchange => "this.form.submit();" %>
@@ -20,6 +25,6 @@
 
 <ul>
   <% @updated_this_month.each_with_index do |title| %>
-   <li><%= link_to title[0], title[1]%></li>
+    <li><%= link_to title[0], title[1]%></li>
   <% end %>
 </ul>
