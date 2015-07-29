@@ -1,4 +1,4 @@
-<h1><%= @city %></h1>
+<h1><%= @city.capitalize%></h1>
 <h1>Data Set Count: <%= @count%></h1>
 
 <%= form_for root_path, :method => :get do |f| %>
@@ -6,7 +6,9 @@
   <%= f.submit "Get Data", :class => "nav_button" %>
 <% end %>
 
-<%= timeline @chart_data, height: "500px", width: "1000px"%>
+<script>
+  var data = <%= raw @chart_data.to_json%>;
+</script>
 
 <h4>Datasets Made in the past month:</h4>
 
