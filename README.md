@@ -5,7 +5,7 @@ Displays a timeline of all Datasets being added and how often they are updated
 
 ## Data Sets
 To see all available datasets, visit:
-https://www.data.gov/app/uploads/2014/11/opendatasites1.csv
+https://s3.amazonaws.com/bsp-ocsit-prod-east-appdata/datagov/wordpress/2017/10/opendatasites.csv
 
 ## Requirements
 
